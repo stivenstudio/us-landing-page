@@ -10,10 +10,11 @@ export default function Home() {
         <nav className={styles.header__nav}>
           <ul className={styles.nav__ul}>
             <li className={styles.nav__ul__li}>
-              SERVICIOS
+              <a href="#specializations">SERVICIOS</a>
+              
             </li>
             <li className={styles.nav__ul__li}>
-              PROYECTOS
+              <a href="#projects">PROYECTOS</a>
             </li>
           </ul>
         </nav>
@@ -30,7 +31,7 @@ export default function Home() {
         <span className={styles.hero__scroll}>scroll</span>
       </section>
 
-      <section className={styles.specializations}>
+      <section className={styles.specializations} id="specializations">
         <h1 className={styles.specializations__h1}>Nos especializamos en el desarrollo de varios sistemas</h1>
         <h3><u>Desarrollo de Sistemas de Software</u></h3>
 
@@ -96,8 +97,31 @@ export default function Home() {
         </li>
       </ul>
 
-      <section className={styles.projects}>
+      <section className={styles.projects} id="projects">
+        <div className={styles.projects__columns}>
+          <img src="hero (2).jpg" alt="" className={styles.img__hero__2} />
+          <h1>PROYECTOS</h1>
+        </div>
 
+        <ul className={styles.projects__ul}>
+          <li className={styles.projects__li__ul}>
+            <h3>amucAPP</h3>
+            <p>Lleva el inventario de tus cultivos fácil y sencillo teniendo control de insumos y tiempo de crecimiento y producción.</p>
+          </li>
+          <li className={styles.projects__li__ul}>
+            <h3>slimAPP</h3>
+            <p>ERP para empresas del segmento textil, facilita el control de inventario de materias prima, productos en confección y productos finales.</p>
+          </li>
+          <li className={styles.projects__li__ul}>
+            <h3>AppSolar</h3>
+            <p>Aplicación móvil que permite conocer la producción solar de un panel, considerando variables relacionadas como la temperatura, la humedad, el voltaje y la corriente del panel.</p>
+          </li>
+          <li className={styles.projects__li__ul}>
+            <h3>AppEEnergias</h3>
+            <p>Una aplicación móvil que permite conocer el consumo de energía eléctrica de un sistema eléctrico.</p>
+          </li>
+        </ul>
+        
       </section>
 
     </main>
