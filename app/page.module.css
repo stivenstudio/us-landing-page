@@ -19,6 +19,18 @@
   display: flex;
   gap: 2em;
   justify-content: center;
+
+  font-weight: var(--type-bold);
+
+  .nav__ul__li {
+    letter-spacing: 3px;
+    transition: opacity .3s;
+  }
+
+  .nav__ul__li:hover {
+    opacity: .5;
+  }
+
 }
 
 
@@ -31,6 +43,11 @@
   align-items: center;
   height: 100vh;
 
+  .hero__h1 {
+    font-size: 3em;
+    text-shadow: 0px 32px 32px rgba(0, 0, 0, 0.3);
+  }
+
   .hero__scroll {
     width: fit-content;
     border: 1px solid #BBBBBB;
@@ -42,16 +59,22 @@
 }
 
 .hero__columns {
-  display: flex;
+  display: grid;
+  grid-template-rows: repeat(auto-fit, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
   gap: 3em;
 }
 
 .img__hero__1 {
+  width: 100%;
   border-radius: 3em;
   aspect-ratio: 1;
   object-fit: cover;
-  width: 50%;
+
+  -webkit-box-shadow: 0px 48px 96px -48px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 48px 96px -48px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 48px 96px -48px rgba(0, 0, 0, 0.5);
 }
 
 .specializations {
@@ -59,7 +82,7 @@
   .specializations__h1 {
     text-align: center;
   }
-  
+
   display: flex;
   flex-direction: column;
   gap: 3em;
@@ -81,17 +104,25 @@
 .projects {
   padding: 3rem 0;
 
+  .projects__h1 {
+    text-shadow: 0px 16px 32px rgba(0, 0, 0, 0.3);
+  }
+
   .projects__columns {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 2rem;
-    
+
     .img__hero__2 {
       border-radius: 3rem;
-        aspect-ratio: 3/1;
-        object-fit: cover;
-        width: 50%;
+      aspect-ratio: 3/1;
+      object-fit: cover;
+      width: 50%;
+
+      -webkit-box-shadow: 0px 48px 96px -48px rgba(0, 0, 0, 0.5);
+      -moz-box-shadow: 0px 48px 96px -48px rgba(0, 0, 0, 0.5);
+      box-shadow: 0px 48px 96px -48px rgba(0, 0, 0, 0.5);
     }
   }
 
@@ -105,14 +136,21 @@
 }
 
 
+/*  */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 3em 0;
+}
+
 
 .container__star {
   display: flex;
   place-content: center;
   margin: 3rem 0;
-  
+
   .star__svg {
     width: 3rem;
-    
+
   }
 }

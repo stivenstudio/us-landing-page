@@ -4,14 +4,11 @@ export default function Home() {
   return (
     <main className={styles.main}>
 
-
-
       <header className={styles.header}>
         <nav className={styles.header__nav}>
           <ul className={styles.nav__ul}>
             <li className={styles.nav__ul__li}>
               <a href="#specializations">SERVICIOS</a>
-              
             </li>
             <li className={styles.nav__ul__li}>
               <a href="#projects">PROYECTOS</a>
@@ -20,11 +17,11 @@ export default function Home() {
         </nav>
       </header>
 
-      <section className={styles.hero}>
+      <section className={styles.hero} id="hero">
         <div className={styles.hero__columns}>
           <img src="hero (1).jpg" alt="" className={styles.img__hero__1} />
           <div>
-            <h1>Una apuesta por la innovación</h1>
+            <h1 className={styles.hero__h1}>Una apuesta por la innovación</h1>
             <p>Crecimiento digital adaptado a tu negocio</p>
           </div>
         </div>
@@ -100,7 +97,7 @@ export default function Home() {
       <section className={styles.projects} id="projects">
         <div className={styles.projects__columns}>
           <img src="hero (2).jpg" alt="" className={styles.img__hero__2} />
-          <h1>PROYECTOS</h1>
+          <h1 className={styles.projects__h1}>PROYECTOS</h1>
         </div>
 
         <ul className={styles.projects__ul}>
@@ -123,6 +120,11 @@ export default function Home() {
         </ul>
         
       </section>
+
+      <footer className={styles.footer}>
+        <b>2024</b>
+        <a href="#hero">Subir</a>
+      </footer>
 
     </main>
   );
