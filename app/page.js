@@ -9,8 +9,8 @@ export default function Home() {
 
       <header className={styles.header}>
         <Link href={"/"}>
-          <h1>
-            LOGO
+          <h1 className={styles.header__h1}>
+            INNOTECH
           </h1>
         </Link>
         <nav className={styles.header__nav}>
@@ -100,24 +100,14 @@ export default function Home() {
 
           <ul className={styles.projects__ul}>
             <li className={styles.projects__li__ul}>
-              <img src="https://placehold.co/400" alt="" className={styles.projects__img__li} />
+              <img loading="lazy" src="amucapp.svg" alt="amucAPP" className={styles.projects__img__li} />
               <h3>amucAPP</h3>
               <p>Lleva el inventario de tus cultivos fácil y sencillo teniendo control de insumos y tiempo de crecimiento y producción.</p>
             </li>
             <li className={styles.projects__li__ul}>
-              <img src="https://placehold.co/400" alt="" className={styles.projects__img__li} />
+              <img loading="lazy" src="slimapp.svg" alt="slimAPP" className={styles.projects__img__li} />
               <h3>slimAPP</h3>
               <p>ERP para empresas del segmento textil, facilita el control de inventario de materias prima, productos en confección y productos finales.</p>
-            </li>
-            <li className={styles.projects__li__ul}>
-              <img src="https://placehold.co/400" alt="" className={styles.projects__img__li} />
-              <h3>AppSolar</h3>
-              <p>Aplicación móvil que permite conocer la producción solar de un panel, considerando variables relacionadas como la temperatura, la humedad, el voltaje y la corriente del panel.</p>
-            </li>
-            <li className={styles.projects__li__ul}>
-              <img src="https://placehold.co/400" alt="" className={styles.projects__img__li} />
-              <h3>AppEEnergias</h3>
-              <p>Una aplicación móvil que permite conocer el consumo de energía eléctrica de un sistema eléctrico.</p>
             </li>
           </ul>
         </div>
