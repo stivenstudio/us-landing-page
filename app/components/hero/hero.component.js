@@ -27,18 +27,19 @@ function HeroComponent() {
         return () => window.removeEventListener('scroll', handleScroll)
     }, [])
 
-    useEffect(() => {
-        if (elementView) {
-            controls.start({ opacity: 1, y: 0 })
-        }
-    }, [elementView, controls])
+    // Dan tiron al usar esto
+    // useEffect(() => {
+    //     if (elementView) {
+    //         controls.start({ opacity: 1, y: 0 })
+    //     }
+    // }, [elementView, controls])
 
     
     return (
         <motion.div
-            ref={ref}
+            // ref={ref}
             initial={{ opacity: 0, y: 20 }}
-            animate={controls}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
         >
             <img loading="lazy" src="hero (1).jpg" alt="" className={styles.img__hero__1} />
