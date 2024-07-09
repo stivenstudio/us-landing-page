@@ -2,8 +2,11 @@ import Link from "next/link";
 import styles from "./page.module.css";
 
 import Slider from "./components/Slider";
+import HeroComponent from "./components/hero/hero.component";
 
 export default function Home() {
+
+
   return (
     <main className={styles.main}>
 
@@ -28,7 +31,9 @@ export default function Home() {
       <section className={styles.hero} id="hero">
         <div className={styles.hero__container}>
           <div className={styles.hero__columns}>
-            <img loading="lazy" src="hero (1).jpg" alt="" className={styles.img__hero__1} />
+
+            <HeroComponent />
+
             <div className={styles.hero__right}>
               <h1 className={styles.hero__h1}>Una apuesta por la innovación</h1>
               <p>Crecimiento digital adaptado a tu negocio</p>
