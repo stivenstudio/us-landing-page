@@ -61,7 +61,7 @@
 
 /* */
 .hero {
-  height: 100vh;
+  /* height: 100vh; */
 
   background: #F6F6F6;
 
@@ -230,7 +230,7 @@
 }
 
 
-/*  */
+/* footer */
 .footer {
 
   .footer__container {
@@ -257,10 +257,61 @@
   .hero__columns {
     display: flex;
     flex-direction: column;
-    padding: 2em;    
+  }
+
+  .hero {
+    .hero__container {
+      padding: 2em;
+      gap: 2em
+    }
   }
 
   .img__hero__1 {
     border-radius: 2em;
   }
+
+  /* specializations */
+  .specializations__uiux {
+    padding: 2em;
+
+    .specializations__ul {
+      display: flex;
+      flex-direction: column;
+
+      .specializations__li {
+        align-items: center;
+      }
+    }
+    
+  }
+
+  /* */  
+  .specializations__others {
+    padding: 2em;
+
+    .specializations__ul {
+      display: flex;
+      flex-direction: column;
+
+      .specializations__li {
+        align-items: center;
+      }
+    }
+    
+  }
+
+  /* projects */
+  .projects {
+    padding: 2em;
+    
+    .projects__ul {
+      display: flex;
+      flex-direction: column;
+      
+      .projects__li__ul {
+        align-items: center;
+      }
+    }
+  }
+
 }

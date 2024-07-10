@@ -27,15 +27,28 @@ const Slider = () => {
             spaceBetween={48}
             slidesPerView={3}
             loop={false}
-
+            breakpoints={
+                {
+                    0: {
+                        slidesPerView: 1,
+                        spaceBetween: 32
+                    },
+                    590: {
+                        slidesPerView: 2
+                    },
+                    768: {
+                        slidesPerView: 3
+                    }
+                }
+            }
             scrollbar={{ draggable: true }}
         >
             {
                 specializations.map(
                     (specialization, index) => (
                         <SwiperSlide key={index} className={styles.swiper_slide}>
-                                <h3>{specialization.title}</h3>
-                                <p>{specialization.description}</p>
+                            <h3>{specialization.title}</h3>
+                            <p>{specialization.description}</p>
                         </SwiperSlide>
                     )
                 )

@@ -122,13 +122,23 @@ export default function Home() {
 
       </section>
 
+      {/* footer */}
       <footer className={styles.footer}>
         <div className={styles.footer__container}>
-          <span>
-            2024
-            <b> © Todos los derechos reservados</b>
-          </span>
+
+          <ul className={styles.footer__contact}>
+            <li>+57 311-123-1234</li>
+            <li>info@innotech</li>
+            <li>Popayán, Cauca - Colombia</li>
+          </ul>
+          
+          <ul className={styles.footer__copyright}>
+            <li>Política de privacidad</li>
+            <li>© 2024</li>
+          </ul>
+
           <a href="#hero">Subir</a>
+
         </div>
       </footer>
 
