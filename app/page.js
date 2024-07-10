@@ -49,6 +49,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* especializaciones */}
       <section className={styles.specializations} id="specializations">
 
         <h1 className={styles.specializations__h1}>Nos especializamos en el desarrollo de varios sistemas</h1>
@@ -131,13 +132,13 @@ export default function Home() {
             <li>info@innotech</li>
             <li>Popayán, Cauca - Colombia</li>
           </ul>
-          
+
           <ul className={styles.footer__copyright}>
             <li>Política de privacidad</li>
             <li>© 2024</li>
           </ul>
 
-          <a href="#hero">Subir</a>
+          <a href="#hero" className={styles.footer__up}>Subir</a>
 
         </div>
       </footer>
