@@ -1,8 +1,9 @@
 import Link from "next/link";
 import styles from "./page.module.css";
 
-import Slider from "./components/Slider";
+import Slider from "./components/slider/Slider";
 import HeroComponent from "./components/hero/hero.component";
+import HeaderComponent from "./components/header/header.component";
 
 export default function Home() {
 
@@ -10,44 +11,12 @@ export default function Home() {
   return (
     <main className={styles.main}>
 
-      <div className={styles.header__container}>
-        <header className={styles.header}>
-          <Link href={"/"}>
-            <h1 className={styles.header__h1}>
-              INNOTECH
-            </h1>
-          </Link>
-          <nav className={styles.header__nav}>
-            <ul className={styles.nav__ul}>
-              <li className={styles.nav__ul__li}>
-                <a href="#specializations">SERVICIOS</a>
-              </li>
-              <li className={styles.nav__ul__li}>
-                <a href="#projects">PROYECTOS</a>
-              </li>
-            </ul>
-          </nav>
-        </header>
+      <HeaderComponent />
 
-      </div>
+      <HeroComponent />
 
-      <section className={styles.hero} id="hero">
-        <div className={styles.hero__container}>
-          <div className={styles.hero__columns}>
 
-            <HeroComponent />
-
-            <div className={styles.hero__right}>
-              <h1 className={styles.hero__h1}>Una apuesta por la innovación</h1>
-              <p>Crecimiento digital adaptado a tu negocio</p>
-              <button>
-                CONTACTAR
-              </button>
-            </div>
-          </div>
-          <span className={styles.hero__scroll}>scroll</span>
-        </div>
-      </section>
+      
 
       {/* especializaciones */}
       <section className={styles.specializations} id="specializations">

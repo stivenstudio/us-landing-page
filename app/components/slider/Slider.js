@@ -4,7 +4,7 @@ import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-import styles from '@/app/components/slider.module.css'
+import styles from './slider.module.css'
 
 import 'swiper/css';
 import 'swiper/css/navigation';
