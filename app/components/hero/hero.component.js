@@ -1,38 +1,10 @@
 "use client"
 
-import styles from "@/app/page.module.css";
+import styles from "./hero.module.css";
 
-import { motion, useAnimation } from "framer-motion";
-import { useEffect, useRef, useState } from "react";
+import { motion } from "framer-motion";
 
 function HeroComponent() {
-
-    // const controls = useAnimation()
-    // const [elementView, setElementView] = useState(false)
-    // const ref = useRef(null)
-
-    // useEffect(() => {
-    //     const handleScroll = () => {
-    //         if (ref.current) {
-    //             const rect = ref.current.getBoundingClientRect()
-    //             if (rect.top < window.innerHeight && rect.bottom >= 0) {
-    //                 setElementView(true)
-    //             }
-    //         }
-    //     }
-
-    //     window.addEventListener('scroll', handleScroll)
-    //     handleScroll()
-
-    //     return () => window.removeEventListener('scroll', handleScroll)
-    // }, [])
-
-    // Dan tiron al usar esto
-    // useEffect(() => {
-    //     if (elementView) {
-    //         controls.start({ opacity: 1, y: 0 })
-    //     }
-    // }, [elementView, controls])
 
     return (
         <section className={styles.hero} id="hero">
@@ -40,7 +12,6 @@ function HeroComponent() {
                 <div className={styles.hero__columns}>
 
                     <motion.div
-                        // ref={ref}
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1 }}
@@ -60,9 +31,16 @@ function HeroComponent() {
                             CONTACTAR
                         </button>
                     </motion.div>
-                    
+
                 </div>
-                <span className={styles.hero__scroll}>scroll</span>
+                <motion.div
+                    className={styles.hero__scroll}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: .5, delay: 2 }}
+                >
+                    SCROLL
+                </motion.div>
             </div>
         </section>
     )

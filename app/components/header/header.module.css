@@ -1,0 +1,60 @@
+.header__container {
+    background: #F6F6F6;
+
+    .header {
+        padding: 2em;
+        width: 100%;
+        max-width: 1100px;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.header {
+
+    .header__h1 {
+        position: relative;
+    }
+
+    .header__h1::before {
+        position: absolute;
+        content: "Platforms";
+        top: 100%;
+        bottom: 0;
+        font-size: 12px;
+        font-weight: 100;
+    }
+
+}
+
+.header__nav {}
+
+.nav__ul {
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+
+    font-weight: var(--type-bold);
+
+    .nav__ul__li {
+        letter-spacing: 3px;
+        transition: opacity .3s;
+    }
+
+    .nav__ul__li:hover {
+        opacity: .5;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+    .header__container {
+        .header {
+            flex-direction: column;
+            gap: 1em;
+        }
+    }
+}

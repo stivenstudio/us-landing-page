@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import styles from "@/app/page.module.css";
+import styles from "./header.module.css";
 
 function HeaderComponent() {
 
