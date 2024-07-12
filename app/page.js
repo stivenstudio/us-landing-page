@@ -42,7 +42,7 @@ export default function Home() {
             <li>© 2024</li>
           </ul>
 
-          <a href="#hero" className={styles.footer__up}>Subir</a>
+          <a href="#up" className={styles.footer__up}>Subir</a>
 
         </div>
       </footer>

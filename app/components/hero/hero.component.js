@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 function HeroComponent() {
 
     return (
-        <section className={styles.hero} id="hero">
+        <section className={styles.hero}>
             <div className={styles.hero__container}>
                 <div className={styles.hero__columns}>
 
